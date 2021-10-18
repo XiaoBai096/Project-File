@@ -1,0 +1,18 @@
+# 蓝桥杯每日刷题Day1
+#  编程题
+# 判断IQ
+user = int(input())
+if user >= 140:
+    print("天才")
+elif user >= 120 and user <= 139:
+    print("智力优秀")
+elif user >= 110 and user <= 119:
+    print("智力中上")
+elif user >= 90 and user <= 109:
+    print("智力中等")
+elif user >= 80 and user <= 89:
+    print("智力中下")
+elif user >= 70 and user <= 79:
+    print("智力不足")
+else:
+    print("智力缺陷")
