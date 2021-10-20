@@ -1,1 +1,25 @@
-
+N = int(input())
+sList = []
+a = [1]
+print(a)
+sList.append(a)
+a = a * 2
+print(a)
+sList.append(a)
+print(sList)
+for i in range(3,N+1):
+    b = []
+    for j in range(i-2):
+        b.append(a[j]+a[j+1])
+    a = [1] + b + [1]
+    print(a)
+    sList.append(a)
+for i in range(len(sList)):
+    xList = sList[i]
+    print(((N-i))*5//2*"",end=" ")
+    for j in range(len(xList)):
+        if len(str(xList[j])) >= 2:
+            print("{:<5}".format(xList[xList[j]]),end="")
+        else:
+            print(xList[j],end=4*"")
+print()
