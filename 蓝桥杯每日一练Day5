@@ -1,0 +1,10 @@
+user_lst = list(map(int,input().split(",")))
+user_num = int(input())
+res = 0
+
+for i in range(len(user_lst)):
+    for j in range(i+1,len(user_lst)):
+        if user_lst[j] + user_lst[i] == user_num:
+            res += 1
+
+print(res)
