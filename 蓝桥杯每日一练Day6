@@ -1,1 +1,9 @@
 
+def f(n):
+    if 4 < n <= 60:
+        return f(n-1)+f(n+1)
+    else:
+        return 1
+
+N = int(input())
+print(f(N))
