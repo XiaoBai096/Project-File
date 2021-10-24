@@ -1,0 +1,7 @@
+num_lst = [str(i) for i in range(1,2021)]
+num = "".join(num_lst)
+res = 0
+for i in num:
+    if i == "2":
+        res += 1
+print("一共需要制作{}个'2'".format(res))
