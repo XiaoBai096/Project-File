@@ -1,0 +1,9 @@
+m = int(input())
+d = int(input())
+if m < 1 or m > 12:
+    print('no')
+else:
+    if d < 1 or (m in (1,3,5,7,8,10,12) and (d > 31)) or (m in (2,4,6,9,11) and (d > 30)):
+        print('no')
+    else:
+        print('yes')
