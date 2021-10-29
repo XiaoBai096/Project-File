@@ -1,0 +1,7 @@
+M = int(input())
+N = int(input())
+resLst = []
+for i in range(min(M,N),max(M,N)+1):
+    if i % 7 == 0 and i % 5 != 0:
+        resLst.append(str(i))
+print(",".join(resLst))
