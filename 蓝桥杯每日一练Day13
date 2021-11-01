@@ -1,0 +1,15 @@
+letter = 0
+space = 0
+number = 0
+other = 0
+user = input()
+for i in user:
+    if i.isalpha() == True:
+        letter += 1
+    elif i.isnumeric() == True:
+        number += 1
+    elif i == " ":
+        space += 1
+    else:
+        other += 1
+print("{} {} {} {}".format(letter, space, number, other))
