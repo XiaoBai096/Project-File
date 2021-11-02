@@ -1,0 +1,11 @@
+# 人数
+people = int(input())
+
+# 序号
+PeopleLst = [i for i in range(1,people+1]
+
+while True:
+    if len(PeopleLst) == 0:
+        break
+    else:
+        
