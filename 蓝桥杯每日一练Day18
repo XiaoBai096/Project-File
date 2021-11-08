@@ -1,0 +1,4 @@
+user = list(map(float,input().split(',')))
+user.remove(max(user))
+user.remove(min(user))
+print("{}".format(round(sum(user)/len(user),2)))
