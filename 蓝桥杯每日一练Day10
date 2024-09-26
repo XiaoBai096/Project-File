@@ -1,5 +1,0 @@
-users = list(map(int, input().split(" ")))
-res = []
-for i in range(len(users)-1):
-    res.append(users[i+1] - users(i))
-print(max(res))
